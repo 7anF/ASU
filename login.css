@@ -1,0 +1,158 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Poppins", sans-serif;
+}
+
+.navbar {
+  padding: 2.4rem 14rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.navbar-brand {
+  font-size: 3rem;
+  font-weight: 700;
+  background: -webkit-linear-gradient(left, #212529, #4263eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Space Grotesk", "Inter", "Poppins", sans-serif;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 3rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #212529;
+  font-family: "Inter", "Poppins", sans-serif;
+  transition: all 0.15s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #4c6ef5;
+  text-decoration: underline;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-icon {
+  width: 3.6rem;
+  height: 3.6rem;
+  stroke: #212529;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.nav-icon:hover {
+  stroke: #4c6ef5;
+}
+
+/* CSS START */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16rem;
+  margin-bottom: 20rem;
+}
+
+.login-img {
+  width: 60rem;
+  height: 60rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.login-details {
+  padding: 4rem 4.8rem;
+  box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 0.8rem;
+  width: 50rem;
+  background-color: #fff;
+}
+
+.login-title {
+  font-size: 3.4rem;
+  font-weight: 600;
+  color: #4263eb;
+  margin-bottom: 4rem;
+  font-family: "Space Grotesk", "Inter", "Poppins", sans-serif;
+  text-align: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+  margin-bottom: 4rem;
+}
+
+.login-form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.login-form label {
+  font-size: 1.4rem;
+  font-weight: 500;
+
+  color: #212529;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 1.2rem 1.6rem;
+  font-size: 1.6rem;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.login-form input:focus {
+  border-color: #4263eb;
+  box-shadow: 0 0 5px rgba(66, 99, 235, 0.5);
+}
+
+.login-details button {
+  width: 100%;
+  padding: 1.2rem 1.6rem;
+  border-radius: 0.8rem;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #4c6ef5;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-details button:hover {
+  background-color: #4263eb;
+}
+
+.login-redirect {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #212529;
+  margin-top: 2rem;
+  font-family: "Inter", "Poppins", sans-serif;
+}
+
+.login-redirect a {
+  text-decoration: none;
+  color: #4263eb;
+}
+
+.login-redirect a:hover {
+  text-decoration: underline;
+}

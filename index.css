@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  padding: 2.4rem 14rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.navbar-brand {
+  font-size: 3rem;
+  font-weight: 700;
+  background: -webkit-linear-gradient(left, #212529, #4263eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Space Grotesk", "Inter", "Poppins", sans-serif;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 3rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #212529;
+  font-family: "Inter", "Poppins", sans-serif;
+  transition: all 0.15s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #4c6ef5;
+  text-decoration: underline;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-icon {
+  width: 3.6rem;
+  height: 3.6rem;
+  stroke: #212529;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.nav-icon:hover {
+  stroke: #4c6ef5;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.4rem;
+  gap: 4rem;
+  position: relative;
+  margin-bottom: 50rem;
+}
+
+.hero-img {
+  width: 100vw;
+  height: 84vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.15;
+  filter: grayscale(10%);
+  position: absolute;
+  top: 15%;
+  right: 50%;
+  transform: translate(50%, 0);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 6rem;
+  margin-bottom: 2rem;
+  font-family: "Space Grotesk", "inter", "Poppins", sans-serif;
+  margin-bottom: 2rem;
+  background: -webkit-linear-gradient(left, #212529, #4263eb);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-weight: 600;
+  font-size: 2.6rem;
+  color: #212529;
+  width: 50rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.hero-login {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 1rem;
+  background: #4c6ef5;
+  border: 1px solid #4c6ef5;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hero-login:hover {
+  background: #4263eb;
+  transition: all 0.3s ease;
+  border: 1px solid #4263eb;
+}
+
+.hero-start {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 1rem;
+  background: transparent;
+  border: 1px solid #4c6ef5;
+  color: #4c6ef5;
+  cursor: pointer;
+}
+
+.hero-start:hover {
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Best Seller */
+
+.best-seller {
+  margin: 0 auto;
+  width: 140rem;
+  margin-bottom: 20rem;
+}
+
+.best-seller-title {
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #4263eb;
+  margin-bottom: 2rem;
+  font-family: "Space Grotesk", "inter", "Poppins", sans-serif;
+  margin-bottom: 4rem;
+}
+
+.course-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  margin-bottom: 6rem;
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: #e3e3e3 solid 1px;
+  border-radius: 10px;
+  width: 28rem;
+  cursor: pointer;
+  transform: ease-out;
+  box-shadow: 5px 5px 25px rgba(0 0 0 / 15%);
+}
+
+.thumbnail {
+  border-radius: 10px 10px 0 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.course:hover {
+  transform: scale(1.1);
+  transition: 0.4s ease;
+}
+
+.best-seller-line {
+  width: 100%;
+  height: 4px;
+  background: #4263eb;
+  border-radius: 2px;
+  display: none;
+}
+
+.best-seller-btn {
+  text-align: center;
+
+  border: 1px solid #4c6ef5;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: block;
+  color: #4c6ef5;
+  cursor: pointer;
+}
+
+.best-seller-btn:hover {
+  color: #4263eb;
+}
+
+/* z Pattern */
+.z-pattern {
+  margin: 0 auto;
+  width: 140rem;
+  margin-bottom: 20rem;
+}
+
+.z-container {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.z-container img {
+  width: 55rem;
+  height: 55rem;
+  object-fit: cover;
+}
+
+.z-container-details-title {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.z-container-details-title div {
+  width: 2rem;
+  height: 4rem;
+  background: #4c6ef5;
+  border-radius: 0.6rem;
+}
+
+.z-container-details-title h1 {
+  font-size: 4.2rem;
+  font-weight: 700;
+  font-family: "Space Grotesk", "inter", "Poppins", sans-serif;
+  color: #000;
+  opacity: 0.8;
+}
+
+.z-container-details h2 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: 400;
+  width: 60rem;
+  color: #212529;
+  margin-bottom: 6rem;
+}
+
+.z-container-details button {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 1rem;
+  background: #4c6ef5;
+  border: 1px solid #4c6ef5;
+  color: #fff;
+  cursor: pointer;
+}
+
+.z-container-details button:hover {
+  background: #4263eb;
+  transition: all 0.3s ease;
+  border: 1px solid #4263eb;
+}
+
+/* Footer Section */
+.refs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.container-links {
+  list-style: none;
+  font-size: 1.6rem;
+  padding-right: 6rem;
+}
+
+.links {
+  padding: 0.7rem;
+  cursor: pointer;
+}
+
+.links:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+}
+
+/* Scroll Up Button */
+
+.scrollup-btn {
+  position: fixed;
+  display: block;
+  width: 4.8rem;
+  height: 4.8rem;
+  bottom: 2rem;
+  padding: 1rem;
+  background-color: rgba(33, 37, 41, 0.8);
+  border-radius: 9999px;
+  right: 2rem;
+  z-index: 50;
+  border: none;
+  cursor: pointer;
+}
+
+.scrollup-icon {
+  width: 2rem;
+  height: 2rem;
+  stroke: #fff;
+}
